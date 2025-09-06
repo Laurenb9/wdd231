@@ -1,0 +1,42 @@
+/* Larger layouts */
+@media (min-width: 760px){
+  .hamburger{display:none}
+  .nav{display:block; margin-left:auto}
+  .nav ul{display:flex; gap:.5rem; margin:0}
+  .nav a{border:0; border-radius:.5rem; padding:.5rem .75rem}
+  .nav a:hover, .nav a:focus{background:#f0f2f4}
+
+  /* Grid main panels like the wireframe */
+  main{
+    padding:1.25rem;
+  }
+  .panel.about, .panel.photo{margin:0}
+  .panel.courses{margin-top:1rem}
+
+  .grid-top{
+    display:grid; grid-template-columns: 2fr 1fr; gap:1rem;
+  }
+
+  /* Turn top two panels into a grid row */
+  /* apply with a wrapper */
+}
+
+/* Helper to create the top grid without extra markup */
+@media (min-width: 760px){
+  /* wrap the first two panels visually using CSS grid areas */
+  main{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "h1   h1"
+      "about photo"
+      "courses courses";
+    gap:1rem;
+  }
+  h1{grid-area:h1}
+  .about{grid-area:about}
+  .photo{grid-area:photo}
+  .courses{grid-area:courses}
+  .panel > *:not(h2){padding:1rem 1.25rem}
+  .course-list{grid-template-columns: repeat(3, 1fr)}
+}

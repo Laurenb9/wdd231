@@ -1,0 +1,97 @@
+:root{
+  --bg: #ffffff;
+  --ink: #111418;
+  --muted: #586F7C;       /* feel free to swap with your palette */
+  --brand: #FFB800;
+  --card: #f3f5f7;
+  --complete: #040F0F;
+  --radius: 1rem;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  margin:0;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.6;
+}
+
+.site-header{
+  display:flex;
+  align-items:center;
+  gap:.75rem;
+  padding:.75rem 1rem;
+  border-bottom:1px solid #e6e8eb;
+  position:sticky; top:0; background:var(--bg); z-index:10;
+}
+
+.brand{display:flex; align-items:center; gap:.5rem; text-decoration:none; color:inherit}
+.logo{display:block}
+.site-name{font-weight:800}
+
+.hamburger{
+  margin-left:auto;
+  border:0; background:transparent; padding:.25rem; cursor:pointer;
+  display:inline-flex; flex-direction:column; gap:.25rem;
+}
+.hamburger .bar{width:22px; height:2px; background:var(--ink); display:block}
+
+.nav{display:none}
+.nav.open{display:block}
+.nav ul{list-style:none; margin:.5rem 0 0; padding:0}
+.nav a{
+  display:block; padding:.75rem 1rem; text-decoration:none; color:var(--ink);
+  border-top:1px solid #e6e8eb;
+}
+.nav a[aria-current="page"]{background:var(--card); font-weight:600}
+.nav a:hover, .nav a:focus{background:#f0f2f4}
+
+main{padding:1rem; max-width:1200px; margin-inline:auto}
+h1{margin:.5rem 0 1rem; border-bottom:4px solid #000; padding-bottom:.25rem}
+h2{
+  margin:0; background:#000; color:#fff; padding:.4rem .75rem;
+  border-radius:.4rem .4rem 0 0;
+  font-size:1rem; letter-spacing:.02em;
+}
+
+.panel{background:var(--card); border-radius:var(--radius); overflow:hidden; margin:1rem 0}
+.panel > *:not(h2){padding:1rem}
+
+.photo figure{margin:0; text-align:center}
+.photo img{max-width:100%; height:auto; border-radius:.75rem; background:#ddd}
+
+.filters{
+  display:flex; gap:.5rem; flex-wrap:wrap; padding:1rem 1rem .25rem;
+}
+.chip{
+  border:1px solid #c9cdd2; background:#fff; padding:.4rem .75rem; border-radius:999px;
+  cursor:pointer; font-weight:600;
+}
+.chip.is-active, .chip:hover, .chip:focus{outline:none; border-color:var(--brand)}
+
+.course-list{
+  display:grid; gap:.5rem; padding:0 1rem 1rem;
+}
+.course{
+  display:flex; align-items:center; justify-content:space-between; gap:.75rem;
+  padding:.6rem .8rem; border:1px solid #d7dbe0; border-radius:.6rem; background:#fff;
+}
+.course .code{font-weight:700}
+.course .title{opacity:.8}
+.course .credits{font-variant-numeric: tabular-nums}
+
+.course.completed{
+  background: #e9f8ef;
+  border-color: #b7ebc6;
+}
+.course.completed .code{color: var(--complete)}
+
+.credits{padding:0 1rem 1rem; margin:0; text-align:center; color:var(--muted)}
+
+.site-footer{
+  padding:1.25rem 1rem; background:#f5f6f7; border-top:1px solid #e6e8eb; text-align:center;
+}
+.social{display:flex; gap:.75rem; justify-content:center; list-style:none; padding:0; margin:0 0 .5rem}
+.social a{display:inline-flex; padding:.25rem}
