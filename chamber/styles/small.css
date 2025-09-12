@@ -1,0 +1,58 @@
+:root {
+  --bg: #ffffff;
+  --primary: #003366;
+  --accent: #ffb800;
+  --text: #333333;
+  --radius: 12px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+main {
+  padding: 1rem;
+}
+
+h2.page-title {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+
+/* Bloques apilados en mobile */
+.info-grid,
+.business-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.weather-box,
+.business-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.business-info p {
+  margin: 0.25rem 0;
+}

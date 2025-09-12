@@ -1,0 +1,28 @@
+/* Larger layouts */
+/* Pantallas grandes (desktop) */
+@media (min-width: 768px) {
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Primer bloque con columnas desiguales */
+  .info-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Segundo bloque con 3 columnas iguales */
+  .business-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .card {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Sunrise Café",
+    "address": "123 Main St, City",
+    "phone": "555-123-4567",
+    "website": "https://sunrisecafe.com",
+    "image": "cafe.webp",
+    "membership": 3
+  },
+  {
+    "name": "GreenTech Solutions",
+    "address": "45 Oak Ave, City",
+    "phone": "555-987-6543",
+    "website": "https://greentech.com",
+    "image": "green.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Blue Ocean Travel",
+    "address": "78 Beach Rd, City",
+    "phone": "555-456-7890",
+    "website": "https://blueocean.com",
+    "image": "blue-ocean.jpg",
+    "membership": 1
+  }
+]
