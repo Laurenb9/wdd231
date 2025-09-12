@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("business-cards");
 
   // Ruta correcta al JSON
-  const jsonUrl = "chamber/data/members.json";
+  const jsonUrl = "data/members.json";
 
   fetch(jsonUrl)
     .then(response => {
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <h3>${member.name}</h3>
           <h4 class="tagline">${member.address}</h4>
           <div class="business-content">
-            <img src="chamber/images/${member.image}" alt="${member.name} logo" />
+            <img src="images/${member.image}" alt="${member.name} logo" />
             <div class="business-info">
               <p><strong>Phone:</strong> ${member.phone}</p>
               <p><strong>URL:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
