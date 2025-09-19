@@ -52,3 +52,4 @@ chips.forEach(btn => {
     render(filterCourses(key));
   });
 });
+

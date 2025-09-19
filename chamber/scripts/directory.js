@@ -34,7 +34,7 @@ document.getElementById("list-view").addEventListener("click", () => {
 });
 
 // Footer dates
-document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
 // Call function
@@ -81,3 +81,20 @@ async function getForecast() {
 
 getCurrentWeather();
 getForecast();
+
+const gridBtn = document.getElementById("grid-view");
+const listBtn = document.getElementById("list-view");
+const members = document.getElementById("members");
+
+gridBtn.addEventListener("click", () => {
+  members.className = "grid";
+  gridBtn.classList.add("is-active");
+  listBtn.classList.remove("is-active");
+});
+
+listBtn.addEventListener("click", () => {
+  members.className = "list";
+  listBtn.classList.add("is-active");
+  gridBtn.classList.remove("is-active");
+});
+

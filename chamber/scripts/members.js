@@ -36,3 +36,4 @@ document.addEventListener("DOMContentLoaded", () => {
       container.innerHTML = `<p>Error al cargar la información de negocios.</p>`;
     });
 });
+

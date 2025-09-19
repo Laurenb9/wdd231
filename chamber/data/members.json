@@ -5,7 +5,7 @@
     "phone": "555-123-4567",
     "website": "https://sunrisecafe.com",
     "image": "cafe.webp",
-    "membership": 3
+    "membership": "Gold"
   },
   {
     "name": "GreenTech Solutions",
@@ -13,7 +13,7 @@
     "phone": "555-987-6543",
     "website": "https://greentech.com",
     "image": "green.jpg",
-    "membership": 2
+    "membership": "Silver"
   },
   {
     "name": "Blue Ocean Travel",
@@ -21,6 +21,46 @@
     "phone": "555-456-7890",
     "website": "https://blueocean.com",
     "image": "blue-ocean.jpg",
-    "membership": 1
+    "membership": "Bronze"
+  },
+  {
+    "name": "Mountain Peak Fitness",
+    "address": "210 Summit Blvd, City",
+    "phone": "555-321-9988",
+    "website": "https://mountainpeakfit.com",
+    "image": "fitness.jpg",
+    "membership": "Gold"
+  },
+  {
+    "name": "FreshMart Grocery",
+    "address": "89 Market St, City",
+    "phone": "555-654-1122",
+    "website": "https://freshmart.com",
+    "image": "grocery.jpg",
+    "membership": "Silver"
+  },
+  {
+    "name": "StarLight Cinema",
+    "address": "12 Broadway Ave, City",
+    "phone": "555-112-3344",
+    "website": "https://starlightcinema.com",
+    "image": "cinema.jpg",
+    "membership": "Bronze"
+  },
+  {
+    "name": "Bright Future Academy",
+    "address": "300 Education Rd, City",
+    "phone": "555-778-9900",
+    "website": "https://brightfutureacademy.com",
+    "image": "academy.jpg",
+    "membership": "Gold"
+  },
+  {
+    "name": "Urban Style Boutique",
+    "address": "56 Fashion Ave, City",
+    "phone": "555-667-8899",
+    "website": "https://urbanstyle.com",
+    "image": "boutique.jpg",
+    "membership": "Silver"
   }
 ]
