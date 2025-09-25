@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chamber Project • WDD 231 Project</title>
+  <meta name="description" content="Business Directory - Chamber of Commerce site project for WDD 231.">
+  <meta name="author" content="Laura Rendón">
+  <meta name="robots" content="chamber,follow" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/directory.css">
+  <link rel="stylesheet" href="styles/join.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+  <script src="scripts/members.js"></script>
+  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+  <link rel="icon" href="images/favicon.ico">
+  
+  <meta property="og:title" content="Chamber of Commerce Directory">
+  <meta property="og:description" content="Explore our member directory and discover local businesses, services, and community connections.">
+  <meta property="og:image" content="https://Laurenb9.github.io/wdd231/images/chamber-preview.png">
+  <meta property="og:url" content="https://Laurenb9.github.io/wdd231/directory.html">
+  <meta property="og:type" content="website">
+</head>
+<body>
+      <header class="site-header">
+    <a class="brand" href="./" aria-label="Chamber Project">
+      <svg class="logo" width="32" height="32" viewBox="0 0 24 24" role="img" aria-label="Site logo">
+        <path d="M12 2l9 5v10l-9 5-9-5V7z" fill="currentColor"/>
+      </svg>
+      <span class="site-name">Chamber Join Page</span>
+    </a>
+
+    <button id="menu-toggle" class="hamburger" aria-label="Menu" aria-controls="primary-nav" aria-expanded="false">
+      <span class="bar" aria-hidden="true"></span>
+      <span class="bar" aria-hidden="true"></span>
+      <span class="bar" aria-hidden="true"></span>
+    </button>
+
+    <nav id="primary-nav" class="nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Chamber Directory</a></li>
+        <li><a href="join.html">Join Page</a></li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+<main>
+  <section class="join-form">
+    <h2>Join the Chamber</h2>
+    <form id="joinForm" method="get" action="thankyou.html">
+
+      <!-- First Name -->
+      <label>
+        First Name:
+        <input type="text" name="firstName" required 
+               title="Enter your first name"
+               autocomplete="given-name">
+      </label>
+
+      <!-- Last Name -->
+      <label>
+        Last Name:
+        <input type="text" name="lastName" required 
+               title="Enter your last name"
+               autocomplete="family-name">
+      </label>
+
+      <!-- Organizational Title -->
+      <label>
+        Organizational Title:
+        <input type="text" name="orgTitle"
+               title="Your title within the organization"
+               autocomplete="organization-title"
+               pattern="[A-Za-z\s-]{7,}">
+      </label>
+
+      <!-- Email -->
+      <label>
+        Email:
+        <input type="email" name="email" required
+               title="Enter a valid email address"
+               autocomplete="email"
+               placeholder="name@example.com">
+      </label>
+
+      <!-- Mobile Phone -->
+      <label>
+        Mobile Phone:
+        <input type="tel" name="phone" required
+               title="Enter your mobile phone number"
+               autocomplete="tel">
+      </label>
+
+      <!-- Business/Organization Name -->
+      <label>
+        Business / Organization Name:
+        <input type="text" name="organization" required
+               title="Enter the business name"
+               autocomplete="organization">
+      </label>
+
+      <!-- Membership Level -->
+      <fieldset>
+        <legend>Membership Level</legend>
+        <label><input type="radio" name="membership" value="NP" required> NP Membership</label>
+        <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+        <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+        <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+      </fieldset>
+
+      <!-- Description -->
+      <label>
+        Business Description:
+        <textarea name="description" title="Describe your business"></textarea>
+      </label>
+
+      <!-- Timestamp -->
+      <input type="hidden" name="timestamp" id="timestamp">
+
+      <!-- Submit -->
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <!-- Membership Cards -->
+  <section class="membership-options">
+    <h2>Choose Your Membership</h2>
+    <div class="membership-levels">
+
+      <label class="membership-card">
+        <input type="radio" name="membership" value="NP">
+        <h3>Non-Profit</h3>
+        <p class="price">Free</p>
+        <details>
+          <summary>More info</summary>
+          <ul>
+            <li>Free for nonprofits</li>
+            <li>Access to chamber events</li>
+            <li>Networking opportunities</li>
+          </ul>
+        </details>
+      </label>
+
+      <label class="membership-card">
+        <input type="radio" name="membership" value="Bronze">
+        <h3>Bronze</h3>
+        <p class="price">$50 / year</p>
+        <details>
+          <summary>More info</summary>
+          <ul>
+            <li>Event discounts</li>
+            <li>Business directory listing</li>
+            <li>Networking events</li>
+          </ul>
+        </details>
+      </label>
+
+      <label class="membership-card">
+        <input type="radio" name="membership" value="Silver">
+        <h3>Silver</h3>
+        <p class="price">$150 / year</p>
+        <details>
+          <summary>More info</summary>
+          <ul>
+            <li>Spotlight ads on chamber site</li>
+            <li>Training workshops</li>
+            <li>Priority placement</li>
+          </ul>
+        </details>
+      </label>
+
+      <label class="membership-card">
+        <input type="radio" name="membership" value="Gold">
+        <h3>Gold</h3>
+        <p class="price">$300 / year</p>
+        <details>
+          <summary>More info</summary>
+          <ul>
+            <li>Premium directory listing</li>
+            <li>VIP event invitations</li>
+            <li>Promotional banners</li>
+          </ul>
+        </details>
+      </label>
+
+    </div>
+  </section>
+</main>
+
+
+  <footer class="site-footer">
+    <div class="social">
+      <li>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+          <svg width="28" height="28" viewBox="0 0 24 24" role="img" aria-hidden="true">
+            <path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5ZM3 9h4v12H3V9Zm7 0h3.8v1.64h.05c.53-1 1.84-2.05 3.8-2.05 4.06 0 4.8 2.67 4.8 6.14V21h-4v-5.16c0-1.23-.02-2.8-1.7-2.8-1.7 0-1.96 1.33-1.96 2.7V21h-4V9Z">
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X profile">
+          <svg width="28" height="28" viewBox="0 0 24 24" role="img" aria-hidden="true">
+            <path fill="currentColor" d="M18.244 2H21.5l-7.47 8.54L22 22h-6.93l-5.42-6.58L3.82 22H.5l7.99-9.12L2 2h7.07l4.93 5.94L18.244 2Zm-2.43 17.3h1.88L8.29 4.61H6.28l9.534 14.69Z">
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube channel"> 
+          <svg width="28" height="28" viewBox="0 0 24 24" role="img" aria-hidden="true">
+            <path fill="currentColor" d="M21.8 8s-.2-1.43-.8-2.06c-.77-.84-1.64-.85-2.04-.9C16.1 4.9 12 4.9 12 4.9h-.02s-4.1 0-6.94.14c-.4.05-1.27.06-2.04.9C2.4 6.57 2.2 8 2.2 8S2 9.64 2 11.28v1.44C2 14.36 2.2 16 2.2 16s.2 1.43.8 2.06c.77.84 1.78.82 2.23.91 1.62.15 6.77.15 6.77.15s4.1 0 6.94-.14c.4-.05 1.27-.06 2.04-.9.6-.63.8-2.06.8-2.06s.2-1.64.2-3.28v-1.44C22 9.64 21.8 8 21.8 8ZM9.75 14.5v-5l5.2 2.5-5.2 2.5Z"/>
+          </svg>
+        </a>
+      </li>
+    </div>
+
+     <p><strong>Chamber of Commerce</strong></p>
+     <p>
+      &copy; <span id="currentyear"></span> • <span>Laura Rendón</span> • <span>Colombia, Manizales</span>
+          <div class="contact">
+      <p>Email: info@chamber.org | Phone: +57 300-460-7262</p>
+    </div>
+    </p>
+    <p id="lastModified"></p>
+</body>

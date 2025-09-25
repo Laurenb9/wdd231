@@ -14,11 +14,14 @@
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
   <link rel="stylesheet" href="styles/directory.css">
+  <link rel="stylesheet" href="styles/join.css">
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
   <script src="scripts/courses.js" defer></script>
   <script src="scripts/members.js"></script>
   <script src="scripts/directory.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
   <link rel="icon" href="images/favicon.ico">
   
   <meta property="og:title" content="Chamber of Commerce Directory">
@@ -29,82 +32,30 @@
 </head>
 
 <body>
-  <header class="site-header">
+    <header class="site-header">
     <a class="brand" href="./" aria-label="Chamber Project">
       <svg class="logo" width="32" height="32" viewBox="0 0 24 24" role="img" aria-label="Site logo">
         <path d="M12 2l9 5v10l-9 5-9-5V7z" fill="currentColor"/>
       </svg>
-      <span class="site-name">Chamber Home Page</span>
+      <span class="site-name">Chamber Join Page</span>
     </a>
+    </header>
 
-    <button id="menu-toggle" class="hamburger" aria-label="Menu" aria-controls="primary-nav" aria-expanded="false">
-      <span class="bar" aria-hidden="true"></span>
-      <span class="bar" aria-hidden="true"></span>
-      <span class="bar" aria-hidden="true"></span>
-    </button>
+    <main class="thankyou-container">
+  <div class="thankyou-card">
+    <h2>🎉 Thank you for joining!</h2>
+    <p>We’ve received your application. Here’s a summary of your information:</p>
+    
+    <ul class="summary-list" id="summary-list">
+      <!-- JS will insert the info here -->
+    </ul>
 
-    <nav id="primary-nav" class="nav" aria-label="Primary">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="directory.html">Chamber Directory</a></li>
-        <li><a href="join.html">Join Page</a></li>
-        <li><a href="#">Final Project</a></li>
-      </ul>
-    </nav>
-  </header>
-
- <main>
-
-
-  <section class="hero">
-    <img src="images/Plaza-Bolívar-Manizales.jpg" alt="Hero image of the chamber" />
-  </section>
-
-  
-  <h2 class="page-title">Home</h2>
-
-  
-  <section class="info-grid">
-   
-    <div class="card events">
-      <h3>Events</h3>
-      <p>Upcoming chamber and community events go here...</p>
-    </div>
-
-  
-    <div class="card current-weather">
-  <h3>Current Weather</h3>
-  <div class="weather-box">
-    <img id="weather-icon" src="images/clima.png" width="90" alt="Weather icon" />
-    <div class="weather-info">
-      <p id="temp">Temp: °C</p>
-      <p id="conditions">Condition: </p>
-    </div>
+    <a href="index.html" class="btn">Back to Home</a>
   </div>
-</div>
+</main>
 
 
-    <div class="card forecast">
-      <h3>Weather Forecast</h3>
-      <ul>
-        <li>Today: Sunny, 20°C</li>
-        <li>Tomorrow: Cloudy, 18°C</li>
-        <li>Next Day: Rainy, 16°C</li>
-      </ul>
-    </div>
-  </section>
-
-  
-<section id="business-cards" class="business-grid">
-</section>
-
- 
- </main>
-
-
-  <footer class="site-footer">
-
-
+      <footer class="site-footer">
     <div class="social">
       <li>
         <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
@@ -137,6 +88,4 @@
     </div>
     </p>
     <p id="lastModified"></p>
-
 </body>
-</html>
