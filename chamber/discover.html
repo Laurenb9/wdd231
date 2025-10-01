@@ -53,149 +53,20 @@
       </ul>
     </nav>
   </header>
-<main>
-  <section class="join-form">
-    <h2>Join the Chamber</h2>
-    <form id="joinForm" method="get" action="thankyou.html">
+<main class="discover-layout">
 
-      <!-- First Name -->
-      <label>
-        First Name:
-        <input type="text" name="firstName" required 
-               title="Enter your first name"
-               autocomplete="given-name">
-      </label>
+  <aside class="sidebar">
+    <h2>Visitor Info</h2>
+    <p id="visit-message"></p>
+  </aside>
 
-      <!-- Last Name -->
-      <label>
-        Last Name:
-        <input type="text" name="lastName" required 
-               title="Enter your last name"
-               autocomplete="family-name">
-      </label>
-
-      <!-- Organizational Title -->
-      <label>
-        Organizational Title:
-        <input type="text" name="orgTitle"
-               title="Your title within the organization"
-               autocomplete="organization-title"
-               pattern="[A-Za-z\s-]{7,}">
-      </label>
-
-      <!-- Email -->
-      <label>
-        Email:
-        <input type="email" name="email" required
-               title="Enter a valid email address"
-               autocomplete="email"
-               placeholder="name@example.com">
-      </label>
-
-      <!-- Mobile Phone -->
-      <label>
-        Mobile Phone:
-        <input type="tel" name="phone" required
-               title="Enter your mobile phone number"
-               autocomplete="tel">
-      </label>
-
-      <!-- Business/Organization Name -->
-      <label>
-        Business / Organization Name:
-        <input type="text" name="organization" required
-               title="Enter the business name"
-               autocomplete="organization">
-      </label>
-
-      <!-- Membership Level -->
-      <fieldset>
-        <legend>Membership Level</legend>
-        <label><input type="radio" name="membership" value="NP" required> NP Membership</label>
-        <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
-        <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
-        <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
-      </fieldset>
-
-      <!-- Description -->
-      <label>
-        Business Description:
-        <textarea name="description" title="Describe your business"></textarea>
-      </label>
-
-      <!-- Timestamp -->
-      <input type="hidden" name="timestamp" id="timestamp">
-
-      <!-- Submit -->
-      <button type="submit">Submit Application</button>
-    </form>
+  <section class="cards" id="cards-container">
+    <!-- Cards se generan dinámicamente desde JSON -->
   </section>
 
-  <!-- Membership Cards -->
-  <section class="membership-options">
-    <h2>Choose Your Membership</h2>
-    <div class="membership-levels">
-
-      <label class="membership-card">
-        <input type="radio" name="membership" value="NP">
-        <h3>Non-Profit</h3>
-        <p class="price">Free</p>
-        <details>
-          <summary>More info</summary>
-          <ul>
-            <li>Free for nonprofits</li>
-            <li>Access to chamber events</li>
-            <li>Networking opportunities</li>
-          </ul>
-        </details>
-      </label>
-
-      <label class="membership-card">
-        <input type="radio" name="membership" value="Bronze">
-        <h3>Bronze</h3>
-        <p class="price">$50 / year</p>
-        <details>
-          <summary>More info</summary>
-          <ul>
-            <li>Event discounts</li>
-            <li>Business directory listing</li>
-            <li>Networking events</li>
-          </ul>
-        </details>
-      </label>
-
-      <label class="membership-card">
-        <input type="radio" name="membership" value="Silver">
-        <h3>Silver</h3>
-        <p class="price">$150 / year</p>
-        <details>
-          <summary>More info</summary>
-          <ul>
-            <li>Spotlight ads on chamber site</li>
-            <li>Training workshops</li>
-            <li>Priority placement</li>
-          </ul>
-        </details>
-      </label>
-
-      <label class="membership-card">
-        <input type="radio" name="membership" value="Gold">
-        <h3>Gold</h3>
-        <p class="price">$300 / year</p>
-        <details>
-          <summary>More info</summary>
-          <ul>
-            <li>Premium directory listing</li>
-            <li>VIP event invitations</li>
-            <li>Promotional banners</li>
-          </ul>
-        </details>
-      </label>
-
-    </div>
-  </section>
 </main>
 
+<script src="scripts/discover.js" defer></script>
 
   <footer class="site-footer">
     <div class="social">

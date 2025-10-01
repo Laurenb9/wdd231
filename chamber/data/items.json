@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "name": "Plaza de Bolívar",
+      "address": "Cra. 22 #23-10, Manizales, Colombia",
+      "description": "Manizales' Plaza de Bolívar is the city's historic center, highlighted by the imposing Cathedral Basilica of Manizales, the tallest in Colombia. It houses the unique sculpture of the Bolívar Condor, a work by Rodrigo Arenas Betancur, and two historic murals by Guillermo Botero. Surrounded by important buildings such as the Government House, it is a cultural and social space that reflects the history and identity of Manizales.",
+      "image": "images/plaza.jpg"
+    },
+    {
+      "name": "Basilica Cathedral",
+      "address": "Cra. 22 #23-10, Manizales, Colombia",
+      "description": "The Metropolitan Cathedral Basilica of Our Lady of the Rosary of Manizales is the tallest cathedral in Colombia, at 115 meters high, and is notable for its modern Gothic architecture. It was designed by French architect Julien Polti and built between 1928 and 1939. It features imported stained-glass windows and the Polish Corridor, which offers panoramic views of the city.",
+      "image": "images/catedral.jpg"
+    },
+    {
+      "name": "Cable Tower",
+      "address": "Cable Area, Manizales",
+      "description": "The Cable Tower was built between 1915 and 1920 by engineer James Lindsay and moved to Manizales between 1981 and 1984 by professors and students from the School of Architecture and Urban Planning. The tower was part of the infrastructure supporting the 72-km cable car line.",
+      "image": "images/CABLE.jpg"
+    },
+    {
+      "name": "Nevado del Ruiz",
+      "address": "Los Nevados National Natural Park",
+      "description": "Nevado del Ruiz is an active stratovolcano in Colombia's Central Mountain Range, with an elevation of approximately 5,330 meters above sea level. It is characterized by its glacier-covered summit and Arenas crater. It is an explosive volcano, which can cause eruptions with pyroclastic material and the formation of lahars, such as the tragic Armero event in 1985. It is currently constantly active, producing ash emissions, which has led to its temporary closure to visitors.",
+      "image": "images/nevado.png"
+    },
+    {
+      "name": "Recinto del Pensamiento",
+      "address": "Kilometer 11, Road to Magdalena, Manizales",
+      "description": "The Recinto del Pensamiento (Thought Rectory) is a 180-hectare natural and cultural space in Manizales, whose purpose is to promote reflection on development and conservation. It houses the Andean cloud forest and various attractions such as a birdwatching platform, a butterfly farm, and the Wooden Pavilion, a guadua work by architect Simón Vélez. Its infrastructure also includes rooms for academic and business events, connecting strategic thinking with a connection to nature.",
+      "image": "images/recinto.jpg"
+    },
+    {
+      "name": "Palogrande Stadium",
+      "address": "Av. Lindsay 8-20, Manizales, Colombia",
+      "description": "The Palogrande Stadium in Manizales was initially built in 1930 and completed in 1936 for the IV Colombian National Games. It was almost completely rebuilt between 1993 and 1994, and reopened on July 30, 1994, with a friendly match between Once Caldas and Cruzeiro. The stadium's name comes from a large tree that once stood in the area.",
+      "image": "images/estadio.png"
+    },
+    {
+      "name": "National Coffee Park",
+      "address": "Km 6 Road to Montenegro, Quindío",
+      "description": "The Coffee Park is a journey through the customs of a tradition that extends throughout the department of Quindío; part of a destination that has been declared a UNESCO Coffee Cultural Landscape, offering visitors a space for healthy recreation.",
+      "image": "images/parque.jpg"
+    },
+    {
+      "name": "Hot Springs",
+      "address": "Santa Rosa de Cabal, Risaralda",
+      "description": "The Santa Rosa Hot Springs are a tourist destination located in Risaralda, Colombia, known for its thermal pools that spring from the mountains, surrounded by natural surroundings and featuring a waterfall. These waters are rich in minerals and sulfur, and are believed to have medicinal and therapeutic properties, as well as being perfect for relaxation and well-being.",
+      "image": "images/santa-rosa.jpg"
+    }
+  ]
+}
