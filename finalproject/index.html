@@ -3,49 +3,105 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title> • WDD 231 Project</title>
-  <meta name="description" content="">
+  <title>Boxing Life-style</title>
+  <meta name="description" content="Boxing Life-style: boxing history, training, gear and community.">
   <meta name="author" content="Laura Rendón">
 
-  <!-- SEO -->
-  <meta name="robots" content="chamber,follow" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="#">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="images/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-
-
-  <!-- Scripts -->
-
-
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="scripts/index.js" defer></script>
 </head>
-
 <body>
   <header class="site-header">
-    <a class="brand" href="./" aria-label="Chamber Directory">
-      <svg class="logo" width="32" height="32" viewBox="0 0 24 24" role="img" aria-label="Site logo">
-        <path d="M12 2l9 5v10l-9 5-9-5V7z" fill="currentColor"/>
-      </svg>
-      <span class="site-name">Chamber Directory</span>
+    <a class="brand" href="index.html">
+      <span class="site-name">Boxing Life-style</span>
     </a>
-
     <button id="menu-toggle" class="hamburger" aria-label="Menu" aria-controls="primary-nav" aria-expanded="false">
-      <span class="bar" aria-hidden="true"></span>
-      <span class="bar" aria-hidden="true"></span>
-      <span class="bar" aria-hidden="true"></span>
+      <span></span><span></span><span></span>
     </button>
-
-    <nav id="primary-nav" class="nav" aria-label="Primary">
+    <nav id="primary-nav" class="nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="" class="active">Shop</a></li>
-        <li><a href="#">Classes</a></li>
-
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="community.html">Community</a></li>
       </ul>
     </nav>
   </header>
+
+  <main>
+    <section class="hero">
+      <h1>Boxing is not just a sport,<br> it’s a lifestyle.</h1>
+      <p>Discover the roots, gear up, and train like a fighter.</p>
+      <a href="training.html" class="btn">Start Training</a>
+    </section>
+    <main>
+  <!-- Hero -->
+
+  <!-- Intro -->
+  <section class="intro">
+    <h2>Welcome to Boxing Life-style</h2>
+    <p>This site is dedicated to every fighter, fan, and dreamer who sees boxing as more than just a sport. 
+       Explore its history, find the right gear, and train at your own pace.</p>
+  </section>
+
+  <!-- Highlights -->
+  <section class="highlights">
+    <div class="card">
+      <h2>History</h2>
+      <p>Learn about the origins of boxing and its legends.</p>
+      <a href="history.html">Explore</a>
+    </div>
+    <div class="card">
+      <h2>Shop</h2>
+      <p>Find gear for any budget, from beginner to pro.</p>
+      <a href="shop.html">Shop Now</a>
+    </div>
+    <div class="card">
+      <h2>Training</h2>
+      <p>Follow routines and start your boxing journey.</p>
+      <a href="training.html">Start</a>
+    </div>
+  </section>
+
+  <!-- Featured Quote -->
+  <section class="quote">
+    <blockquote>
+      “Float like a butterfly, sting like a bee. 
+      The hands can’t hit what the eyes can’t see.”
+    </blockquote>
+    <cite>— Muhammad Ali</cite>
+  </section>
+
+  <!-- Community Preview -->
+  <section class="community-preview">
+    <h2>From the Community</h2>
+    <article>
+      <h3>Boxing & Health</h3>
+      <p>Discover how boxing improves body and mind strength.</p>
+      <a href="community.html">Read More</a>
+    </article>
+    <article>
+      <h3>Local Fighters Spotlight</h3>
+      <p>Meet inspiring boxers from around the world.</p>
+      <a href="community.html">Read More</a>
+    </article>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta">
+    <h2>Join the Boxing Lifestyle</h2>
+    <a href="community.html" class="btn">Be Part of the Community</a>
+  </section>
+</main>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Boxing Life-style • Built by Laura Rendón</p>
+  </footer>
+
+</body>
+</html>

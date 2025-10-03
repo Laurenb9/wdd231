@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>History • Boxing Life-style</title>
+  <meta name="description" content="History of Boxing">
+  <meta name="author" content="Laura Rendón">
+
+  <!-- SEO -->
+  <meta name="robots" content="chamber,follow" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/index.css">
+    <!-- JS -->
+  <script src="scripts/index.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Chamber Directory">
+      <svg class="logo" width="32" height="32" viewBox="0 0 24 24" role="img" aria-label="Site logo">
+        <path d="M12 2l9 5v10l-9 5-9-5V7z" fill="currentColor"/>
+      </svg>
+      <span class="site-name">Chamber Directory</span>
+    </a>
+
+    <button id="menu-toggle" class="hamburger" aria-label="Menu" aria-controls="primary-nav" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav id="primary-nav" class="nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <h1>The History of Boxing</h1>
+      <p>From ancient arenas to modern rings, discover the journey of the sport.</p>
+    </section>
+
+    <!-- Intro -->
+    <section class="intro">
+      <h2>Origins</h2>
+      <p>Boxing can be traced back to Ancient Mesopotamia and Greece, where it was included in the Olympic Games as early as 688 BC. 
+      It has evolved from bare-knuckle combat into a regulated sport with weight classes and protective gear.</p>
+    </section>
+
+    <!-- Timeline styled as cards -->
+    <section class="highlights">
+      <div class="card">
+        <h2>18th Century</h2>
+        <p>The era of bare-knuckle boxing in England, where fighters gained fame and rules began to emerge.</p>
+      </div>
+      <div class="card">
+        <h2>19th Century</h2>
+        <p>The Marquess of Queensberry rules introduced gloves and structured rounds, shaping modern boxing.</p>
+      </div>
+      <div class="card">
+        <h2>20th Century</h2>
+        <p>Legends like Muhammad Ali, Joe Louis, and Mike Tyson brought boxing to global prominence.</p>
+      </div>
+      <div class="card">
+        <h2>Today</h2>
+        <p>Boxing thrives worldwide with major championships, women fighters, and crossover events.</p>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="quote">
+      <blockquote>"Float like a butterfly, sting like a bee." – Muhammad Ali</blockquote>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Chamber Directory • History</p>
+    <p id="lastModified"></p>
+  </footer>
+
+
+</body>
+</html>
